@@ -1,0 +1,62 @@
+;eliF.oi.avaj tropmi
+;noitpecxEdnuoFtoNeliF.oi.avaj tropmi
+;retirWtnirP.oi.avaj tropmi
+;tsiLyarrA.litu.avaj tropmi
+;rotaretI.litu.avaj tropmi
+;tsiL.litu.avaj tropmi
+;rennacS.litu.avaj tropmi
+
+{ lanoitpOtuptuOtupnIavaJ ssalc cilbup
+{ )rra ][tni(troSnoitceles diov citats cilbup    
+автсежонмдоп есв ьтавиртамсорп медуб идеречо оП*/    
+,йинделсоп-1 ,йинделсоп - 0( ависсам вотнемелэ      
+/*)...,йинделсоп-2      
+{ )++i ;htgnel.rra < i ;0 = i tni( rof        
+моджак в( тнемелэ йывреп отч ,меагалопдерП*/        
+/* мыньламиним ястеялвя )вотнемелэ евтсежонмдоп           
+;]i[rra = nim tni            
+;i = i_nim tni            
+,тнемелэ мещи автсежонмдоп итсач ясйешватсо В*/        
+/*амуминим огоннежолопдерп ешьнем йыроток           
+{ )++j ;htgnel.rra < j ;1+i = j tni( rof            
+скедни оге меанимопаз ,мидохан илсЕ//                
+{ )nim < ]j[rra( fi                
+;]j[rra = nim                    
+;j = i_nim                    
+}                
+}            
+,иицизоп йещукет ан меч ,йишьнем ,тнемелэ яслешан илсЕ*/        
+/*иматсем хи меянем          
+{ )i_nim =! i( fi            
+;]i[rra = pmt tni                
+;]i_nim[rra = ]i[rra                
+;pmt = ]i_nim[rra                
+}            
+}        
+}    
+
+{ noitpecxEdnuoFtoNeliF sworht )sgra ][ gnirtS( niam diov citats cilbup    
+;))"txt.srebmun/atad"(eliF wen(rennacS wen = cs rennacS        
+;)(>regetnI< tsiLyarrA wen=srebmun >regetnI< tsiL        
+{))(txeNsah.cs(elihw        
+;)(tnItxen.cs = rebmun tni            
+;)rebmun(dda.srebmun            
+}        
+;])(ezis.srebmun[tni wen=yarrAsrebmun ][ tni        
+;0=i tni        
+;)(rotareti.srebmun = rotareti rotaretI        
+;)0(evomer.srebmun )regetnI(=]++i[yarrAsrebmun ))(txeNsah.rotareti(elihw        
+;)yarrAsrebmun(troSnoitceles        
+;)"юинатсарзов оп хыннаворитросто ,алйаф зи лесич довыВ"(nltnirp.tuo.metsyS        
+{ )++i ;htgnel.yarrAsrebmun < i ;0 = i( rof        
+;)]i[yarrAsrebmun( nltnirp.tuo.metsyS            
+}        
+;))"txt.avaJtupni/atad"(eliF wen(rennacS wen = cs        
+;))"txt.etavirPoTcilbuPavaJtuptuo/atad"(eliF wen(retirWtnirP wen = retnirp retirWtnirP        
+{))(txeNsah.cs(elihw        
+;)"n\"+)"etavirp","cilbup"(llAecalper.)(eniLtxen.cs(etirw.retnirp            
+;))"etavirp","cilbup"(llAecalper.)(eniLtxen.cs(nltnirp.tuo.metsyS            
+}         
+;)(esolc.retnirp        
+}    
+}

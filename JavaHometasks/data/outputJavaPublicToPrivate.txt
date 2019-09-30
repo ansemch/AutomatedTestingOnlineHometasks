@@ -1,0 +1,62 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Scanner;
+
+private class JavaInputOutputOptional {
+    private static void selectionSort(int[] arr) {
+    /*По очереди будем просматривать все подмножества
+      элементов массива (0 - последний, 1-последний,
+      2-последний,...)*/
+        for (int i = 0; i < arr.length; i++) {
+        /*Предполагаем, что первый элемент (в каждом
+           подмножестве элементов) является минимальным */
+            int min = arr[i];
+            int min_i = i;
+        /*В оставшейся части подмножества ищем элемент,
+           который меньше предположенного минимума*/
+            for (int j = i+1; j < arr.length; j++) {
+                //Если находим, запоминаем его индекс
+                if (arr[j] < min) {
+                    min = arr[j];
+                    min_i = j;
+                }
+            }
+        /*Если нашелся элемент, меньший, чем на текущей позиции,
+          меняем их местами*/
+            if (i != min_i) {
+                int tmp = arr[i];
+                arr[i] = arr[min_i];
+                arr[min_i] = tmp;
+            }
+        }
+    }
+
+    private static void main (String [] args) throws FileNotFoundException {
+        Scanner sc = new Scanner(new File("data/numbers.txt"));
+        List <Integer> numbers=new ArrayList <Integer>();
+        while(sc.hasNext()){
+            int number = sc.nextInt();
+            numbers.add(number);
+        }
+        int [] numbersArray=new int[numbers.size()];
+        int i=0;
+        Iterator iterator = numbers.iterator();
+        while(iterator.hasNext()) numbersArray[i++]=(Integer) numbers.remove(0);
+        selectionSort(numbersArray);
+        System.out.println("Вывод чисел из файла, отсортированных по возрастанию");
+        for (i = 0; i < numbersArray.length; i++) {
+            System.out.println (numbersArray[i]);
+        }
+        sc = new Scanner(new File("data/inputJava.txt"));
+        PrintWriter printer = new PrintWriter(new File("data/outputJavaPublicToPrivate.txt"));
+        while(sc.hasNext()){
+            printer.write(sc.nextLine().replaceAll("private","private")+"\n");
+            System.out.println(sc.nextLine().replaceAll("private","private"));
+         }
+        printer.close();
+    }
+}
